@@ -1,6 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Splash from "../pages/Splash/Splash.vue"
 import SplashSign from "../pages/Splash/SplashSign.vue"
+import SignIn from '../pages/SignUp/SignIn.vue'
+import SignUp from '../pages/SignUp/SignUp.vue'
 
 const routes = [
     {
@@ -12,6 +14,19 @@ const routes = [
         path: '/splash',
         component: SplashSign,
         name: 'splashsign',
+    },
+
+    /* Sign In and Up */
+
+    {
+        path: '/signin',
+        component: SignIn,
+        name: 'SignIn'
+    },
+    {
+        path: '/signup',
+        component: SignUp,
+        name: 'SignUp'
     },
 ]
 
