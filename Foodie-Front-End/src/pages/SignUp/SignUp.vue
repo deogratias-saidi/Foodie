@@ -7,14 +7,14 @@
         flex
         justify-center
         items-center
-        p-14
+        p-10
         text-[#1EBC5D]
       "
     >
       Sign Up
     </div>
    
-    <div class=" flex flex-col justify-center items-center font-semibold">
+    <div class="flex flex-col justify-center items-center font-semibold">
       <div class="w-full max-w-xs">
         <form class="font4">
           <div class="mb-4">
@@ -112,7 +112,7 @@
             <p class="text-red-500 text-xs italic">Passwords do match.</p>
           </div>
           <div class="flex justify-center items-center">
-              <a class="text-[#1EBC5D] ">
+              <a class="text-[#1EBC5D] " href="/signin" >
                   Back to Sign In
               </a>
           </div>
