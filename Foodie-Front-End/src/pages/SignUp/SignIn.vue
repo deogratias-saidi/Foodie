@@ -16,7 +16,7 @@
     <div class="flex justify-center items-center">
       <img src="../../assets/SVG/logo.svg" alt="" />
     </div>
-    <div class="pt-10 flex flex-col justify-center items-center font-semibold">
+    <div class="pt-4 flex flex-col justify-center items-center font-semibold">
       <div class="w-full max-w-xs">
         <form class="font4">
           <div class="mb-4">
@@ -77,7 +77,7 @@
             <p class="text-red-500 text-xs italic">Please choose a password.</p>
           </div>
           <div class="flex justify-center items-center">
-              <a class="text-[#1EBC5D] font-semibold ">
+              <a class="text-[#1EBC5D] font-semibold " href="/signup">
                   Create Account
               </a>
           </div>
@@ -104,7 +104,7 @@
         <p class="text-center pb-8">
           Sign in with 
         </p>
-        <div class="">
+        <div class="mb-2">
             <Logos/>
         </div>
       </div>
@@ -116,11 +116,15 @@
 import Logos from "../../components/common/Logos.vue";
 
 export default {
-    components: { Logos }
+    components: { Logos },
+    setup() {
+      
+    }
 }
 </script>
 
 <style scoped>
+
 @import url("https://fonts.googleapis.com/css2?family=Rozha+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
 
