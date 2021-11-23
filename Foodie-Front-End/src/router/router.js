@@ -4,6 +4,7 @@ import SplashSign from "../pages/Splash/SplashSign.vue"
 import SignIn from '../pages/SignUp/SignIn.vue'
 import SignUp from '../pages/SignUp/SignUp.vue'
 import Home from '../pages/Home/Home.vue'
+import OpenRecipe from '../pages/RecipeDetail/OpenRecipe.vue'
 
 const routes = [
     {
@@ -68,6 +69,14 @@ const routes = [
         iconClass: 'fa fa-user',
         mainMenu: true,
     },
+
+    /* Recipe Detail */
+
+    {
+        path: '/recipe',
+        component: OpenRecipe,
+        name:'recipe',
+    }
 
 ]
 

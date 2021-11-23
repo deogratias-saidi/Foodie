@@ -1,56 +1,32 @@
 <template>
-  <div class="pb-20">
-      <h3 class="font5 p-[30px] font-extrabold text-[24px]">Our Latest recipes</h3>
-
+  <div class=" h-[414px]">
+      <h3 class="font5 px-[30px] font-extrabold text-[24px]">Our Latest recipes</h3>
       <swiper
-        :slidesPerView="1.2"
+        :slidesPerView="1.29"
         :spaceBetween="30"
         :loop="true"
         :pagination="{
           clickable: true,
         }"
-        class="mySwiper px-[30px]"
+        class="mySwiper my-5 w-[247] px-[30px]"
       >
-        <swiper-slide>
+        <swiper-slide class="h-[360] flex-col">
           <img
-            class="mr-1 rounded-xl"
+            class="mr-1 rounded-xl h-[335px] w-full  "
             src="../../assets/images/alex-lvrs-aX_ljOOyWJY-unsplash.jpg"
             alt="Burger"
           />
-          <p class="pt-2">lol</p>
+        <p class="my-2 text-[13px] " >Creamy chicken & chorizo pasta</p>
         </swiper-slide>
+
         <swiper-slide>
           <img
-            class="mr-1"
-            src="../../assets/images/kim-daniels-OrkEasJeY74-unsplash.jpg"
-            alt="Burger"
-          />
-          <i class="fas fa-home" ></i>
-        </swiper-slide>
-        <swiper-slide>
-          <img
-            class="mr-1"
+            class="mr-1 rounded-xl h-[335px] w-full"
             src="../../assets/images/eiliv-sonas-aceron-uBigm8w_MpA-unsplash.jpg"
             alt="Burger"
           />
-          lol
-        </swiper-slide>
-        <swiper-slide>
-          <img
-            class="mr-1"
-            src="../../assets/images/kim-daniels-OrkEasJeY74-unsplash.jpg"
-            alt="Burger"
-          />
-          lol
-        </swiper-slide>
-        <swiper-slide>
-          <img
-            class="mr-1"
-            src="../../assets/images/kim-daniels-OrkEasJeY74-unsplash.jpg"
-            alt="Burger"
-          />
-          lol
-        </swiper-slide>
+          <p class="my-2 text-[13px] ">Creamy chicken & chorizo pasta</p>
+        </swiper-slide>    
       </swiper>
     </div>
 </template>
@@ -72,6 +48,22 @@ export default {
     Swiper,
     SwiperSlide,    
   },
+  setup() {
+
+    // fetch data from rickandmortyapi
+    const fetchData = async () => {
+      const response = await fetch(
+        "https://rickandmortyapi.com/api/character/1"
+      )
+      const data = await response.json()
+      return data
+    }
+
+
+    return {
+     fetchData
+    }
+  }
     
 }
 </script>
