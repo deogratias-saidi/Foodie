@@ -8,5 +8,6 @@
       <p>Let's Start Cooking</p>
       <i class="fas fa-arrow-right ml-3"></i>
     </router-link>
-  </footer>
+  </footer> 
+  
 </template>

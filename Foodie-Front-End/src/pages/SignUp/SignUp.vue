@@ -7,7 +7,7 @@
         flex
         justify-center
         items-center
-        p-10
+       
         text-[#1EBC5D]
       "
     >

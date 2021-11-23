@@ -5,6 +5,8 @@ import SignIn from '../pages/SignUp/SignIn.vue'
 import SignUp from '../pages/SignUp/SignUp.vue'
 import Home from '../pages/Home/Home.vue'
 import OpenRecipe from '../pages/RecipeDetail/OpenRecipe.vue'
+import Profile from '../pages/Profile/Profile.vue'
+import MyProfile from '../pages/Profile/MyProfile.vue'
 
 const routes = [
     {
@@ -76,7 +78,18 @@ const routes = [
         path: '/recipe',
         component: OpenRecipe,
         name:'recipe',
-    }
+    },
+    {
+        path: '/profile',
+        component: Profile,
+        name:'profile',
+    },
+    {
+        path: '/myprofile',
+        component: MyProfile,
+        name:'myprofile',
+    },
+
 
 ]
 
