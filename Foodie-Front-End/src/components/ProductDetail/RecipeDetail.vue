@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-[50px]">
     <div class="px-[30px]">
       <div class="flex justify-between items-center py-4">
         <h1 class="font5 font-extrabold text-[24px]">Neapolitan-style pizza</h1>
@@ -16,7 +16,10 @@
             bg-gray-300
           "
         >
+        <router-link to="/home">
+
           <i class="fas fa-times"></i>
+        </router-link>
         </div>
       </div>
       <div class="flex justify-between">

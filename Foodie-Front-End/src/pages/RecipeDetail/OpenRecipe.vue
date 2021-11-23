@@ -2,7 +2,10 @@
 <div>
 
   <recipe-detail/>
+  <router-link to="/recipe">
+
   <recipe-steps/>
+  </router-link>
 </div>
 
 </template>

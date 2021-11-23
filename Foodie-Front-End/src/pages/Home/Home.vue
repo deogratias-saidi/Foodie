@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="mt-[50px]">
     <!-- Top bar -->
     <div class="px-[30px]">
-      <div class="flex justify-between pt-5 items-center">
+      <div class="flex justify-between items-center">
         <div class="font5 font-extrabold text-[28px]">Hello, Deogratias</div>
         <box-icon name="bell"></box-icon>
       </div>

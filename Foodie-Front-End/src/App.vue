@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[50px]">
+  <div>
 
 
   <Router-View/>

@@ -20,16 +20,14 @@
         <div class="font2 text-[14px] mr-3">Don't have an Account</div>
         <div class="font2 text-[14px] font-semibold text-blue-700">Sign Up</div>
       </div>
-      <div class="font2 mt-8 text-white h-[60px] w-full flex items-center justify-center bg-[#1EBC5D] text-[18px]">
-          Let’s Start Cooking 
-          <box-icon name='right-arrow-alt' color='#ffffff' ></box-icon>
-      </div>
+      <RecipeSteps />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import RecipeSteps from "../../components/common/NavLinks/RecipeSteps.vue";
+export default { components: { RecipeSteps } }
 </script>
 
 <style scoped>

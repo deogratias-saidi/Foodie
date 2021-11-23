@@ -7,6 +7,7 @@ import Home from '../pages/Home/Home.vue'
 import OpenRecipe from '../pages/RecipeDetail/OpenRecipe.vue'
 import Profile from '../pages/Profile/Profile.vue'
 import MyProfile from '../pages/Profile/MyProfile.vue'
+import SettingsPage from '../pages/Profile/SettingsPage.vue'
 
 const routes = [
     {
@@ -65,8 +66,8 @@ const routes = [
         mainMenu: true,
     },
     {
-        path: '/home',
-        component: Home,
+        path: '/myprofile',
+        component: MyProfile,
         name:'account',
         iconClass: 'fa fa-user',
         mainMenu: true,
@@ -79,6 +80,7 @@ const routes = [
         component: OpenRecipe,
         name:'recipe',
     },
+    /* Profile */
     {
         path: '/profile',
         component: Profile,
@@ -89,6 +91,14 @@ const routes = [
         component: MyProfile,
         name:'myprofile',
     },
+
+    /* Settings */
+
+    {
+        path: '/settings',
+        component: SettingsPage,
+        name:'settings',
+    }
 
 
 ]

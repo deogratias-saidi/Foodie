@@ -1,5 +1,5 @@
 <template>
-  <div class="px-[30px]">
+  <div class="px-[30px] mt-[50px]">
     <div class="flex justify-between">
       <div class="flex justify-between">
         <div class="flex pr-2 items-center">
@@ -32,9 +32,9 @@
           </div>
         </div>
       </div>
-      <div class="text-[20px] text-blue-500">
+      <router-link to="/settings" class="text-[20px] text-blue-500">
         <i class="fas fa-cog"></i>
-      </div>
+      </router-link>
     </div>
     <div class="my-10 flex justify-around">
       <div class="flex-col text-center">
@@ -55,157 +55,40 @@
         <p class="my-4 font-bold">Recipes</p>
         <p class="my-4">Recipes</p>
         <p class="my-4">Recipes</p>
-        <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
 
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div class="flex-col">
+      <div class="grid grid-cols-2">
+      <div class="relative w-[150px]">
+        <i
+          class="
+            far
+            fa-heart
+            text-2xl text-red-500
+            absolute
+            cursor-pointer
+            top-4
+            right-3
+          "
+        ></i>
+        <img
+          class="my-2 rounded-xl h-[177px] w-[150px] object-cover"
+          src="../../assets/images/alex-lvrs-aX_ljOOyWJY-unsplash.jpg"
+          alt="Burger"
+        />
         <div class="flex justify-between">
-          <div class="relative w-[165px]">
-            <i
-              class="
-                far
-                fa-heart
-                text-2xl text-red-500
-                absolute
-                cursor-pointer
-                p-3
-                top-0
-                right-0
-              "
-            ></i>
-            <img
-              class="my-2 rounded-xl h-[177px] w-full object-cover"
-              src="../../assets/images/alex-lvrs-aX_ljOOyWJY-unsplash.jpg"
-              alt="Burger"
-            />
-            <p class="font-semibold my-3 text-[13px]">
-              Creamy chicken & chorizo pasta
-            </p>
-          </div>
-          <div class="relative w-[165px]">
-            <i
-              class="
-                far
-                fa-heart
-                text-2xl text-red-500
-                absolute
-                cursor-pointer
-                p-3
-                top-0
-                right-0
-              "
-            ></i>
-            <img
-              class="my-2 rounded-xl h-[176px] w-full object-cover"
-              src="../../assets/images/alex-lvrs-aX_ljOOyWJY-unsplash.jpg"
-              alt="Burger"
-            />
-            <p class="font-semibold my-3 text-[13px]">
-              Creamy chicken & chorizo pasta
-            </p>
-          </div>
+
+        <p class="font-semibold text-[13px]">Creamy chicken & chorizo pasta</p>
+        <div>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
         </div>
       </div>
-      <div class="flex-col">
-        <div class="flex justify-between">
-          <div class="relative w-[165px]">
-            <i
-              class="
-                far
-                fa-heart
-                text-2xl text-red-500
-                absolute
-                cursor-pointer
-                p-3
-                top-0
-                right-0
-              "
-            ></i>
-            <img
-              class="my-2 rounded-xl h-[177px] w-full object-cover"
-              src="../../assets/images/alex-lvrs-aX_ljOOyWJY-unsplash.jpg"
-              alt="Burger"
-            />
-            <p class="font-semibold my-3 text-[13px]">
-              Creamy chicken & chorizo pasta
-            </p>
-          </div>
-          <div class="relative w-[165px]">
-            <i
-              class="
-                far
-                fa-heart
-                text-2xl text-red-500
-                absolute
-                cursor-pointer
-                p-3
-                top-0
-                right-0
-              "
-            ></i>
-            <img
-              class="my-2 rounded-xl h-[176px] w-full object-cover"
-              src="../../assets/images/alex-lvrs-aX_ljOOyWJY-unsplash.jpg"
-              alt="Burger"
-            />
-            <p class="font-semibold my-3 text-[13px]">
-              Creamy chicken & chorizo pasta
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flex-col">
-        <div class="flex justify-between">
-          <div class="relative w-[165px]">
-            <i
-              class="
-                far
-                fa-heart
-                text-2xl text-red-500
-                absolute
-                cursor-pointer
-                p-3
-                top-0
-                right-0
-              "
-            ></i>
-            <img
-              class="my-2 rounded-xl h-[177px] w-full object-cover"
-              src="../../assets/images/alex-lvrs-aX_ljOOyWJY-unsplash.jpg"
-              alt="Burger"
-            />
-            <p class="font-semibold my-3 text-[13px]">
-              Creamy chicken & chorizo pasta
-            </p>
-          </div>
-          <div class="relative w-[165px]">
-            <i
-              class="
-                far
-                fa-heart
-                text-2xl text-red-500
-                absolute
-                cursor-pointer
-                p-3
-                top-0
-                right-0
-              "
-            ></i>
-            <img
-              class="my-2 rounded-xl h-[176px] w-full object-cover"
-              src="../../assets/images/alex-lvrs-aX_ljOOyWJY-unsplash.jpg"
-              alt="Burger"
-            />
-            <p class="font-semibold my-3 text-[13px]">
-              Creamy chicken & chorizo pasta
-            </p>
-          </div>
-        </div>
-      </div>
+      
+    </div>
     </div>
   </div>
 </template>
