@@ -4,6 +4,10 @@ import SplashSign from "../pages/Splash/SplashSign.vue"
 import SignIn from '../pages/SignUp/SignIn.vue'
 import SignUp from '../pages/SignUp/SignUp.vue'
 import Home from '../pages/Home/Home.vue'
+import OpenRecipe from '../pages/RecipeDetail/OpenRecipe.vue'
+import Profile from '../pages/Profile/Profile.vue'
+import MyProfile from '../pages/Profile/MyProfile.vue'
+import SettingsPage from '../pages/Profile/SettingsPage.vue'
 
 const routes = [
     {
@@ -62,12 +66,40 @@ const routes = [
         mainMenu: true,
     },
     {
-        path: '/home',
-        component: Home,
+        path: '/myprofile',
+        component: MyProfile,
         name:'account',
         iconClass: 'fa fa-user',
         mainMenu: true,
     },
+
+    /* Recipe Detail */
+
+    {
+        path: '/recipe',
+        component: OpenRecipe,
+        name:'recipe',
+    },
+    /* Profile */
+    {
+        path: '/profile',
+        component: Profile,
+        name:'profile',
+    },
+    {
+        path: '/myprofile',
+        component: MyProfile,
+        name:'myprofile',
+    },
+
+    /* Settings */
+
+    {
+        path: '/settings',
+        component: SettingsPage,
+        name:'settings',
+    }
+
 
 ]
 

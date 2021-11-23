@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen">
+  <div class="w-screen h-screen mt-[50px]">
     <div
       class="
         font3
@@ -7,7 +7,7 @@
         flex
         justify-center
         items-center
-        p-10
+       
         text-[#1EBC5D]
       "
     >
