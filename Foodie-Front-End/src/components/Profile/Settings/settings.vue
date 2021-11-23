@@ -1,5 +1,5 @@
 <template>
-  <div class="px-[30px]">
+  <div class="px-[30px] mt-[50px]">
     <router-link
       to="/myprofile"
       class="
@@ -54,7 +54,7 @@
         </div>
       </div>
       <div
-        class="fixed bg-white overflow-x-hidden inset-7"
+        class="fixed bg-white overflow-x-hidden inset-7 pt-[50px]"
         v-if="toggleMeasurement"
       >
         <div class="flex justify-between mb-4">
@@ -69,7 +69,7 @@
         </div>
       </div>
       <div
-        class="fixed bg-white overflow-x-hidden inset-7"
+        class="fixed bg-white overflow-x-hidden inset-7 pt-[50px]"
         v-if="toggleNotification"
       >
         <div class="flex justify-between mb-4">
@@ -86,7 +86,7 @@
           <p class="mt-4">Push Notification</p>
         </div>
       </div>
-      <div class="fixed bg-white overflow-x-hidden inset-7" v-if="toggleVideo">
+      <div class="fixed bg-white overflow-x-hidden inset-7 pt-[50px]" v-if="toggleVideo">
         <div class="flex justify-between mb-4">
           <div class="font-semibold text-[20px]">Video Autoplay</div>
           <div @click="toggleVideo = false" class="text-[20px] font-thin cursor-pointer">
@@ -98,7 +98,7 @@
           <p class="mt-4">Off</p>
         </div>
       </div>
-      <div class="fixed bg-white overflow-x-hidden inset-7" v-if="toggleAbout">
+      <div class="fixed bg-white overflow-x-hidden inset-7 pt-[50px]" v-if="toggleAbout">
         <div class="flex justify-between mb-4">
           <div class="font-semibold text-[20px]">About Us</div>
           <div @click="toggleAbout = false" class="text-[20px] font-thin cursor-pointer">
@@ -112,7 +112,7 @@
           <p class="mt-4">Contact Us</p>
         </div>
       </div>
-      <div class="fixed bg-white overflow-x-hidden inset-7" v-if="toggleRate">
+      <div class="fixed bg-white overflow-x-hidden inset-7 pt-[50px]" v-if="toggleRate">
         <div class="flex justify-between mb-4">
           <div class="font-semibold text-[20px]">Rate App</div>
           <div @click="toggleRate = false" class="text-[20px] font-thin cursor-pointer">
@@ -124,7 +124,7 @@
           <p class="mt-4">Share App</p>
         </div>
       </div>
-      <div class="fixed bg-white overflow-x-hidden inset-7" v-if="toggleLegal">
+      <div class="fixed bg-white overflow-x-hidden inset-7 pt-[50px]" v-if="toggleLegal">
         <div class="flex justify-between mb-4">
           <div class="font-semibold text-[20px]">Legal Infomation</div>
           <div @click="toggleLegal = false" class="text-[20px] font-thin cursor-pointer">
@@ -138,7 +138,7 @@
           <p class="mt-4">Contact Us</p>
         </div>
       </div>
-      <div class="fixed bg-white overflow-x-hidden inset-7" v-if="toggleLogout">
+      <div class="fixed bg-white overflow-x-hidden inset-7 pt-[50px]" v-if="toggleLogout">
         <div class="flex justify-between mb-4">
           <div class="font-semibold text-[20px]">Logout</div>
           <div @click="toggleLogout = false" class="text-[20px] font-thin cursor-pointer">
