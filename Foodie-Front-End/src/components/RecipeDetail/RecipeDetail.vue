@@ -1,4 +1,6 @@
 <template>
+<div>
+
   <div class="mt-[50px]">
     <div class="px-[30px]">
       <div class="flex justify-between items-center py-4">
@@ -81,8 +83,8 @@
       <div class="w-full py-3">
         <h4 class="font-bold text-[20px]">Ingredients</h4>
         <div class="flex">
-          <p class="mr-3 text-gray-500 text-[15px]">Serving for 5</p>
-          <p class="text-blue-600 text-[15px]">Change</p>
+          <p  class="mr-3 text-gray-500 text-[15px]">Serving for 5</p>
+          <p class="text-blue-600 text-[15px]" @click="toggleServing = !toggleServing ">Change</p>
         </div>
         <div class="my-3">
           <div class="flex justify-between items-center">
@@ -216,26 +218,85 @@
           </div>
           <div>3 days a</div>
         </div>
-        <div class="pl-3">
+        <div class="ml-10">
             <p class="font2 text-[13px] ">
                 The pizza has already worked great in the oven. 😍 Thank you for this great recipe !!...
             </p>
         </div>
-        <div class="font2 font-normal py-2 ">
+        <div @click="toggleComments = !toggleComments" class="font2 font-normal py-5">
             <p>View All Comments</p>
         </div>
-        <div class="h-[48px] mb-20  w-[355] border-2 flex justify-between items-center text-gray-500 ">
+        <div class="h-[48px] mb-20  w-[355] border-[1px] flex justify-between items-center bg-[#F8F9FF] text-gray-500 ">
             <i class="fas fa-paperclip pl-3 text-xl"></i>
-            <input class="w-[240px] outline-none " type="text" placeholder="Type what your review..."  >
+            <input class="w-[240px] outline-none bg-[#F8F9FF] " type="text" placeholder="Type what your review..."  >
             <i class=" pr-3  far fa-smile h-[20] w-[20] text-xl"></i>
         </div>
       </div>
     </div>
+    
+  </div>
+
+    <div class=" fixed bg-white inset-7 z-50" v-if="toggleServing">
+      <div class="flex-col content-center text-center">
+
+      <div>Servings for</div>
+      <div class="flex text-center justify-evenly my-6">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+      </div>
+      </div>
+      <div class="h-[46px] w-[315px] bg-[#1EBC5D] flex justify-center items-center">
+        <p class="font2 text-[13px] text-lg font-semibold text-white" @click="toggleServing = false">Change</p>
+      </div>
+    </div>
+    <div class="absolute inset-0 z-40 bg-white" v-if="toggleServing" ></div>
+    <div
+        class="fixed bg-white inset-7 z-50"
+        v-if="toggleComments"
+      >
+        <div class="flex justify-between mb-4">
+          <div class="font-semibold text-[20px]">Comments</div>
+          <div @click="toggleComments = false" class="text-[20px] font-thin cursor-pointer">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex justify-between">
+          <div class="flex">
+            <img
+              class="h-[30px] w-[30px] rounded-full object-cover mr-2"
+              src="../../assets/Images/jessica-felicio-_cvwXhGqG-o-unsplash.jpg"
+              alt=""
+            />
+            <p>Andrea</p>
+          </div>
+          <div>3 days a</div>
+        </div>
+        <div class="ml-10">
+            <p class="font2 text-[13px] ">
+                The pizza has already worked great in the oven. 😍 Thank you for this great recipe !! Can someone help me with the procedure with the pizza stone on the gas grill? eg what temperature? And do you also use baking paper here because the dough sticks at first? Would like to try, but I'm not sure how it works best ... Thank you very much for your help! 😊 
+                Show original language: German
+            </p>
+        </div>
+        </div>
+      </div>
+      <div class="absolute inset-0 z-40 bg-white" v-if="toggleComments" ></div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data(){
+    return {
+      toggleComments : false,
+      toggleServing: false
+
+    }
+  }
+}
 </script>
 
 <style scoped>

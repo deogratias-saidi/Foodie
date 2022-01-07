@@ -7,7 +7,11 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@auth0/auth0-spa-js": "^1.19.2",
     "@fortawesome/fontawesome-free": "^5.15.4",
+    "@vueuse/core": "^7.1.2",
+    "dotenv": "^10.0.0",
+    "firebase": "^9.5.0",
     "swiper": "^7.3.0",
     "vue": "^3.2.16",
     "vue-material-design-icons": "^4.13.0",

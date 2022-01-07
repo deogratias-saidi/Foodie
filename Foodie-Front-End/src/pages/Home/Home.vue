@@ -3,7 +3,8 @@
     <!-- Top bar -->
     <div class="px-[30px]">
       <div class="flex justify-between items-center">
-        <div class="font5 font-extrabold text-[28px]">Hello, Deogratias</div>
+        <div v-if="!isAuthenticated" class="font5 font-extrabold text-[28px]">Hello</div>
+        <div v-else class="font5 font-extrabold text-[28px]">Hello, {{user}}</div>
         <box-icon name="bell"></box-icon>
       </div>
       <div class="text-[#586593] font5 text-[13px]">
@@ -61,12 +62,24 @@ import NavLinks from "../../components/common/NavLinks/NavLinks.vue"
 import LatestRecipes from "../../components/Home/LatestRecipes.vue"
 import Trending from "../../components/Home/Trending.vue"
 
+import useAuth from "../../auth/userAuth"
+
+
+
 export default {
   components: {
     NavLinks,
     LatestRecipes,
     Trending,
   },
+  setup(){
+    const {isAuthenticated, user} = useAuth()
+
+    return {
+      isAuthenticated,
+      user
+    }
+  }
 }
 </script>
 

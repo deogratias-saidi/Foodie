@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="px-[30px] mt-[50px]">
     <div class="flex justify-between">
       <div class="flex justify-between">
@@ -102,10 +103,14 @@
       
     </div>
   </div>
+  <nav-links/>
+</div>
 </template>
 
 <script>
-export default {}
+import NavLinks from "../common/NavLinks/NavLinks.vue";
+export default { components: { NavLinks } }
 </script>
 
-<style></style>
+<style>
+</style>

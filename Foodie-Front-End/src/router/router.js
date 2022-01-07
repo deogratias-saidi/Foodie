@@ -8,6 +8,8 @@ import OpenRecipe from '../pages/RecipeDetail/OpenRecipe.vue'
 import Profile from '../pages/Profile/Profile.vue'
 import MyProfile from '../pages/Profile/MyProfile.vue'
 import SettingsPage from '../pages/Profile/SettingsPage.vue'
+import RecipeInput from '../pages/CreateRecipe/RecipeInput.vue'
+import RecipePreview from '../pages/CreateRecipe/RecipePreview.vue'
 
 const routes = [
     {
@@ -24,12 +26,12 @@ const routes = [
     /* Sign In and Up */
 
     {
-        path: '/signin',
+        path: '/login',
         component: SignIn,
         name: 'SignIn'
     },
     {
-        path: '/signup',
+        path: '/register',
         component: SignUp,
         name: 'SignUp'
     },
@@ -52,8 +54,8 @@ const routes = [
         mainMenu: true,
     },
     {
-        path: '/home',
-        component: Home,
+        path: '/create',
+        component: RecipeInput,
         name:'add',
         iconClass: 'fa fa-plus',
         mainMenu: true,
@@ -98,6 +100,11 @@ const routes = [
         path: '/settings',
         component: SettingsPage,
         name:'settings',
+    },
+    {
+        path: '/preview',
+        component: RecipePreview,
+        name:'preview',
     }
 
 

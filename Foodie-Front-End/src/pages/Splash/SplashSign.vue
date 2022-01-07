@@ -18,7 +18,12 @@
       </div>
       <div class="flex justify-center pt-[56px]">
         <div class="font2 text-[14px] mr-3">Don't have an Account</div>
-        <div class="font2 text-[14px] font-semibold text-blue-700">Sign Up</div>
+        <router-link
+          to="/signup"
+          class="font2 text-[14px] font-semibold text-blue-700"
+        >
+          Sign Up
+        </router-link>
       </div>
       <RecipeSteps />
     </div>
@@ -26,7 +31,7 @@
 </template>
 
 <script>
-import RecipeSteps from "../../components/common/NavLinks/RecipeSteps.vue";
+import RecipeSteps from "../../components/common/NavLinks/RecipeSteps.vue"
 export default { components: { RecipeSteps } }
 </script>
 
