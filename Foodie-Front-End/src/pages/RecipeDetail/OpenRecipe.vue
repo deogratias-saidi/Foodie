@@ -2,7 +2,7 @@
 <div>
 
   <recipe-detail/>
-  <router-link to="/recipe">
+  <router-link to="/steps">
 
   <recipe-steps/>
   </router-link>

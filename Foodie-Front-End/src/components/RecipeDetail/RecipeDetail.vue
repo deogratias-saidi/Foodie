@@ -27,7 +27,7 @@
       <div class="flex justify-between">
         <div class="flex items-center">
           <img
-            class="h-[20px] w-[20px] rounded-full object-cover mr-2"
+            class="h-[30px] w-[30px] rounded-full object-cover mr-2"
             src="../../assets/Images/jessica-felicio-_cvwXhGqG-o-unsplash.jpg"
             alt=""
           />
@@ -75,7 +75,7 @@
           <i class="far fa-heart"> </i>
           <p class="ml-2">1.5k</p>
         </div>
-        <div class="flex items-center">
+        <div class="flex items-center" @click="toggleComments = !toggleComments">
           <i class="far fa-comment-dots"> </i>
           <p class="ml-2">32</p>
         </div>
@@ -263,7 +263,10 @@
             <i class="fas fa-times"></i>
           </div>
         </div>
-        <div class="">
+        <!-- Commenents -->
+        <div class="overflow-y-scroll">
+
+        <div class=" ">
           <div class="flex justify-between">
           <div class="flex">
             <img
@@ -280,6 +283,7 @@
                 The pizza has already worked great in the oven. 😍 Thank you for this great recipe !! Can someone help me with the procedure with the pizza stone on the gas grill? eg what temperature? And do you also use baking paper here because the dough sticks at first? Would like to try, but I'm not sure how it works best ... Thank you very much for your help! 😊 
                 Show original language: German
             </p>
+        </div>
         </div>
         </div>
       </div>

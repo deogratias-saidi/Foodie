@@ -10,6 +10,7 @@ import MyProfile from '../pages/Profile/MyProfile.vue'
 import SettingsPage from '../pages/Profile/SettingsPage.vue'
 import RecipeInput from '../pages/CreateRecipe/RecipeInput.vue'
 import RecipePreview from '../pages/CreateRecipe/RecipePreview.vue'
+import StepsPage from '../pages/RecipeDetail/StepsPage.vue'
 
 const routes = [
     {
@@ -81,6 +82,11 @@ const routes = [
         path: '/recipe',
         component: OpenRecipe,
         name:'recipe',
+    },
+    {
+        path: '/steps',
+        component: StepsPage,
+        name:'steps',
     },
     /* Profile */
     {
